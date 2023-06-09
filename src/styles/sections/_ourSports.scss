@@ -1,0 +1,62 @@
+@use "../base/variables";
+
+.our-sports {
+	&__banner-mobile-1 {
+		position: absolute;
+		width: 300%;
+		top: -30px;
+		left: -50px;
+		transform: rotate(8deg);
+		transform-origin: left center;
+	}
+
+	&__banner-mobile-2 {
+		position: absolute;
+		width: 300%;
+		top: 80px;
+		left: -100px;
+		transform: rotate(-14deg);
+		transform-origin: left center;
+	}
+
+	&__banner-desk-1 {
+		position: absolute;
+		width: 300%;
+		top: 70px;
+		left: -30px;
+		transform-origin: top left;
+		transform: rotate(-15deg);
+	}
+
+	&__banner-desk-2 {
+		position: absolute;
+		width: 135%;
+		top: 80px;
+		left: -30px;
+		transform-origin: center;
+		transform: rotate(8deg);
+	}
+
+	&__banner-desk-3 {
+		position: absolute;
+		width: 150%;
+		bottom: 100px;
+		left: -50px;
+		transform-origin: bottom left;
+		transform: rotate(23deg);
+	}
+
+	&__banner-desk-4 {
+		position: absolute;
+		width: 135%;
+		bottom: 0;
+		// left: 50%;
+		transform-origin: center;
+		transform: rotate(-37deg);
+	}
+
+	&__image {
+		background-image: url("../../assets/img/runner.png");
+		background-position: center top;
+	}
+}

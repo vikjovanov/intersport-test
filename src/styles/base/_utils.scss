@@ -1,0 +1,15 @@
+@use "../base/variables";
+
+.hidden {
+	display: none;
+}
+
+@media (min-width: variables.$breakpoint-lg) {
+	.hidden-lg {
+		display: none;
+	}
+
+	.visible-lg {
+		display: unset;
+	}
+}

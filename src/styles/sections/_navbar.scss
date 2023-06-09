@@ -1,0 +1,28 @@
+@use "../base/variables";
+
+.navbar {
+	background-color: variables.$lightGray;
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		justify-content: space-between;
+		align-items: flex-end;
+		white-space: nowrap;
+		gap: 32px;
+		overflow-x: auto;
+		margin: 0;
+	}
+
+	&__item {
+		padding-top: 32px;
+		padding-bottom: 32px;
+		text-transform: uppercase;
+		border-bottom: 1px solid variables.$color-text;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

@@ -1,0 +1,81 @@
+@use "../base/variables";
+@use "../base/typo";
+
+.btn {
+	@include typo.btn-text;
+	border-radius: 26px;
+	border: none;
+	height: 41px;
+	padding-left: 20px;
+	padding-right: 20px;
+	pointer-events: auto;
+
+	&-primary {
+		background-color: variables.$color-secondary;
+		color: variables.$white;
+
+		&:hover {
+			cursor: pointer;
+			background-color: lighten(variables.$color-secondary, 5%);
+		}
+	}
+
+	&-secondary {
+		background-color: variables.$white;
+		color: variables.$color-text;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&-outline {
+		background-color: transparent;
+		color: variables.$color-text;
+		border: 1px solid variables.$color-text;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.slide-btn {
+	position: relative;
+	background-color: #fff;
+	border-radius: 50px;
+	width: 70px;
+	height: 70px;
+	border: 1px solid variables.$color-secondary;
+	&:before {
+		font-size: 35px;
+		color: variables.$color-secondary;
+		position: absolute;
+		left: 52%;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+	pointer-events: auto;
+	box-shadow: variables.$shadow-base;
+	visibility: visible;
+
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.02);
+	}
+
+	&--prev {
+		&:before {
+			content: "⟨";
+		}
+	}
+	&--next {
+		&:before {
+			content: "⟩";
+		}
+	}
+
+	&--hidden {
+		visibility: hidden;
+	}
+}

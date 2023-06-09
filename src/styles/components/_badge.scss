@@ -1,0 +1,29 @@
+@use "../base/typo";
+@use "../base/variables";
+
+@mixin badge-default {
+	background-color: variables.$black;
+	border-radius: 10px;
+	color: variables.$white;
+	padding: 7px 12px;
+	min-width: 78px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.badge {
+	@include badge-default;
+	@extend .badge-title;
+
+	&--sm {
+		@include badge-default;
+		@extend .badge-title--sm;
+		padding: 9px 12px;
+	}
+
+	&--lg {
+		@include badge-default;
+		@extend .badge-title--lg;
+	}
+}

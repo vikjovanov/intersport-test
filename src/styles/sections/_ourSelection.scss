@@ -1,0 +1,34 @@
+@use "../base/variables";
+
+.our-selection {
+	&__banner-mobile {
+		position: absolute;
+		width: 300%;
+		top: -20px;
+		left: -50px;
+		transform: rotate(11deg);
+		transform-origin: left center;
+	}
+
+	&__banner-desk-1 {
+		position: absolute;
+		width: 300%;
+		top: 70px;
+		left: -30px;
+		transform-origin: top left;
+		transform: rotate(-15deg);
+	}
+
+	&__banner-desk-2 {
+		position: absolute;
+		width: 135%;
+		top: 80px;
+		left: -30px;
+		transform-origin: center;
+		transform: rotate(8deg);
+	}
+
+	&__image {
+		background-image: url("../../assets/img/boxer.png");
+	}
+}

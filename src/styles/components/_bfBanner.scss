@@ -1,0 +1,35 @@
+@use "../base/variables";
+
+.bf-banner--neutral {
+	background: variables.$black;
+	height: 65px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 100%;
+}
+
+.bf-banner__image--neutral {
+	background-image: url("../../assets//img/BFBanner-neutral.png");
+	background-repeat: repeat-x;
+	background-size: auto 100%;
+	background-position: left;
+
+	height: 100%;
+	width: 100%;
+}
+
+.bf-banner--colored {
+	background: variables.$gradient-primary;
+	height: 35px;
+	width: 100%;
+}
+
+.bf-banner__image--colored {
+	background-image: url("../../assets//img/BFBanner-colored.png");
+	background-repeat: repeat-x;
+	background-size: auto 100%;
+	background-position: left;
+
+	height: 100%;
+	width: 100%;
+}

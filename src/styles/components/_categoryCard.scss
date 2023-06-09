@@ -1,0 +1,87 @@
+@use "../base/typo";
+@use "../base/variables";
+
+.category-card {
+	position: relative;
+	width: 268px;
+	min-width: 268px;
+	height: 422px;
+	margin-right: 12px;
+	margin-left: 12px;
+
+	&:hover &__image {
+		transform: scale(1.1);
+		transition: ease-in-out 100ms;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&__image-container {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	&__image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__actions-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		pointer-events: none;
+
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__actions-header {
+		flex: 0;
+	}
+
+	&__actions-body {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+		@include typo.body-text;
+		font-size: variables.$text-5xl;
+		font-weight: 600;
+		text-align: center;
+		color: #fff;
+		text-shadow: #000 1px 0 10px;
+	}
+
+	&__actions-footer {
+		flex: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 30px;
+	}
+
+	&__see-more {
+		@include typo.body-text;
+		color: #fff;
+		pointer-events: auto;
+
+		&:after {
+			content: " ⟩";
+		}
+
+		&:hover {
+			cursor: pointer;
+			text-decoration-line: underline;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+$font-primary: "Amsi Pro Condensed", sans-serif; //Amsi
+$font-secondary: "Open Sans", sans-serif; //Open Sans
+
+$text-3xs: 5px;
+$text-2xs: 9px;
+$text-xs: 12px;
+$text-sm: 14px;
+$text-md: 16px;
+$text-lg: 18px;
+$text-xl: 20px;
+$text-2xl: 24px;
+$text-3xl: 26px;
+$text-4xl: 28px;
+$text-5xl: 30px;
+$text-6xl: 40px;
+$text-7xl: 50px;
+$text-8xl: 60px;
+
+$line-height-base: 1.2;
+$line-height-tight: 1.05;
+$line-height-none: 1;
+
+$yellow: #ffe600;
+$orange: #ffac00;
+$red: #e30613;
+$blue: #164194;
+$green: #81bc00;
+
+$white: #ffffff;
+$lightGray: #f6f5f3;
+$gray: #f2f2f2;
+$darkGray: #393938;
+$black: #000000;
+
+$color-background: $gray;
+$color-primary: $yellow;
+$color-secondary: $blue;
+$color-tertiary: $black;
+
+$shadow-base: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+
+$white: $white;
+
+$color-sale: $red;
+$color-text: $darkGray;
+
+$gradient-primary: linear-gradient(180deg, $yellow 41.81%, $orange 89.85%);
+
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;

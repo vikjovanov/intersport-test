@@ -1,0 +1,64 @@
+@use "../base/variables";
+@use "../base/typo";
+
+.hero-product {
+	&__image-zone {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__image {
+		// background-color: red;
+		background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23E30613FF' stroke-width='3' stroke-dasharray='20' stroke-dashoffset='10' stroke-linecap='square'/%3e%3c/svg%3e");
+		width: 250px;
+		height: 250px;
+		object-fit: contain;
+		transform-origin: bottom;
+	}
+
+	&__infos-zone {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 8px;
+	}
+
+	&__discount {
+		margin-bottom: 13px;
+		.badge {
+			color: variables.$yellow;
+		}
+	}
+
+	&__category {
+	}
+
+	&__price {
+		padding-top: 24px;
+
+		span {
+			padding-left: 4px;
+			padding-right: 4px;
+		}
+	}
+
+	&__divide-payment {
+		@include typo.body-text;
+
+		margin-top: 24px;
+		margin-bottom: 24px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		&__badge {
+			background-color: variables.$green;
+			color: variables.$white;
+			border-radius: 20px;
+			padding: 7px;
+			font-weight: 700;
+			margin-right: 8px;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+//BASE
+@use "base/variables";
+@use "base/fonts";
+@use "base/grid";
+@use "base/utils";
+
+@use "components/countdown";
+@use "components/badge";
+@use "components/heroProduct";
+@use "components/buttons";
+@use "components/bfBanner";
+@use "components/productCard";
+@use "components/productSection";
+@use "components/categoryCard";
+
+@use "sections/banner";
+@use "sections/hero";
+@use "sections/navbar";
+@use "sections/goodDeal";
+@use "sections/ourSelection";
+@use "sections/ourBrands";
+@use "sections/ourSports";
+
+@use "media";
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	background-color: variables.$color-background;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.app {
+	background-color: variables.$color-background;
+}
+
+/*
+ * SECTION BANNER
+ */
+
+.hero {
+	background-color: variables.$white;
+}

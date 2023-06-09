@@ -1,0 +1,76 @@
+@use "../base/variables";
+
+.product-section {
+	position: relative;
+	margin-top: 40px;
+
+	&__header-bg {
+		position: relative;
+		background: variables.$gradient-primary;
+		overflow: hidden;
+	}
+
+	&__header {
+		position: relative;
+		min-height: 320px;
+		padding-top: unset;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	&__title-container {
+		padding-bottom: 70px;
+		flex: 0;
+	}
+
+	&__surtitle {
+		padding-bottom: 10px;
+		text-transform: uppercase;
+	}
+
+	&__title {
+		text-transform: uppercase;
+	}
+
+	&__image {
+		flex: 1;
+		background-position: center top;
+		background-size: cover;
+	}
+}
+
+.product-grid {
+	position: relative;
+
+	&__wrapper {
+		transform: translateY(-5%);
+	}
+
+	&__container {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	&__btn-container {
+		position: absolute;
+		padding-left: 12px;
+		padding-right: 12px;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		pointer-events: none;
+	}
+
+	&__cta-container {
+		padding-top: 40px;
+	}
+}

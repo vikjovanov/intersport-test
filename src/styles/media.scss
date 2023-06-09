@@ -1,0 +1,159 @@
+@use "./base/variables";
+@use "./base/typo";
+
+@media (min-width: variables.$breakpoint-lg) {
+	.title {
+		@include typo.title;
+		font-size: variables.$text-7xl;
+
+		&--outlined {
+			@include typo.title--outlined;
+			font-size: variables.$text-7xl;
+		}
+
+		&-lg {
+			@include typo.title;
+			font-size: variables.$text-8xl;
+
+			&--outlined {
+				@include typo.title--outlined;
+				font-size: variables.$text-8xl;
+			}
+		}
+
+		&-sm {
+			@include typo.title;
+			font-size: variables.$text-6xl;
+
+			&--outlined {
+				@include typo.title--outlined;
+				font-size: variables.$text-6xl;
+			}
+		}
+	}
+
+	.banner {
+		&__content {
+			padding-top: 0;
+			padding-bottom: 0;
+
+			.badge {
+				display: inline-block;
+			}
+		}
+
+		.title {
+			word-spacing: unset;
+			text-align: left;
+		}
+	}
+
+	.banner__alert {
+		display: none;
+	}
+
+	.hero-product {
+		&__image-zone {
+			justify-content: flex-end;
+			align-items: flex-end;
+			height: 100%;
+			padding-right: 50px;
+		}
+
+		&__image {
+			background-image: none;
+			// width: 320px;
+			// height: 320px;
+			// background-color: red;
+			transform: scale(1.4);
+		}
+
+		&__infos-zone {
+			align-items: flex-start;
+			padding-left: 100px;
+		}
+	}
+
+	.hero__btn-container {
+		display: flex;
+	}
+
+	.good-deal {
+		&__container {
+			justify-content: center;
+		}
+	}
+
+	.good-deal__product-image img {
+		width: 350px;
+		height: 350px;
+	}
+
+	.good-deal__old-price {
+		font-size: variables.$text-5xl;
+	}
+
+	.good-deal__discount-price {
+		font-size: variables.$text-6xl;
+		font-weight: 900;
+	}
+
+	.good-deal__product-title {
+		padding-top: 10px;
+		font-size: variables.$text-3xl;
+	}
+
+	.good-deal__product-description {
+		font-size: variables.$text-xl;
+	}
+
+	.good-deal__buy-btn {
+		margin-top: 30px;
+		margin-bottom: 25px;
+	}
+
+	.badge-title {
+		&--lg {
+			font-size: variables.$text-7xl;
+		}
+	}
+
+	.product-section {
+		&__header {
+			min-height: 500px;
+			padding-top: 72px;
+			flex-direction: row;
+			justify-content: flex-start;
+		}
+
+		&__title-container {
+			flex: 1;
+			padding-top: 55px;
+		}
+	}
+
+	.product-grid__wrapper {
+		transform: translateY(-40%);
+	}
+
+	.product-card {
+		min-width: 300px;
+
+		&__badge {
+			&--new {
+				font-size: variables.$text-xs;
+			}
+		}
+	}
+
+	.product-grid__cta-container {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding-bottom: 50px;
+		pointer-events: none;
+	}
+}

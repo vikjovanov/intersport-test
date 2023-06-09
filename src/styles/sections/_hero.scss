@@ -1,0 +1,49 @@
+@use "../base/variables";
+
+.hero {
+	padding-top: 26px;
+	padding-bottom: 60px;
+	background-color: #fff;
+	position: relative;
+}
+
+.hero__slide {
+	position: relative;
+}
+
+.hero__dots-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 24px;
+}
+
+.hero__dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	margin-left: 9px;
+	margin-right: 9px;
+	background-color: #c4c4c4;
+
+	&--active {
+		background-color: #3b3b3c;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.hero__btn-container {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	pointer-events: none;
+}

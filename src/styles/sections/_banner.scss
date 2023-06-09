@@ -1,0 +1,69 @@
+@use "../base/variables";
+
+.banner {
+	position: relative;
+	background: variables.$gradient-primary;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-height: 230px;
+		padding-top: 45px;
+		padding-bottom: 20px;
+
+		.badge {
+			display: none;
+			vertical-align: top;
+			margin-top: 4px;
+		}
+	}
+
+	&__image {
+		background-image: url("../../assets/img/banner__image.png");
+		background-repeat: no-repeat;
+		background-position: center right;
+		background-size: cover;
+	}
+
+	&__logo-container {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__logo {
+		width: max(4.5vw, 41px);
+	}
+
+	&__alert {
+		display: block;
+		background-color: variables.$black;
+		color: #fff;
+		font-family: variables.$font-primary;
+		font-size: variables.$text-sm;
+		letter-spacing: -0.2px;
+		font-weight: 900;
+		text-transform: uppercase;
+		padding: 7px 70px 7px 50px;
+
+		text-align: center;
+		transform: rotate(-32deg);
+		position: absolute;
+		left: -50px;
+		top: 8px;
+	}
+
+	.title {
+		text-align: center;
+		padding-top: 10px;
+		word-spacing: 1000px; //Force each word to wrap
+	}
+}

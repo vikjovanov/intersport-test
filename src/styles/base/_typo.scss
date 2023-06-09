@@ -1,0 +1,187 @@
+@use "../base/variables";
+
+@mixin title {
+	font-weight: 950;
+	font-family: variables.$font-primary;
+	color: variables.$color-tertiary;
+	line-height: 91%;
+}
+
+@mixin title--outlined {
+	@include title;
+	-webkit-text-stroke: 1px variables.$black;
+	-webkit-text-fill-color: transparent;
+}
+
+.title {
+	@include title;
+	font-size: variables.$text-6xl;
+
+	&--outlined {
+		@include title--outlined;
+		font-size: variables.$text-6xl;
+	}
+
+	&-lg {
+		@include title;
+		font-size: variables.$text-7xl;
+
+		&--outlined {
+			@include title--outlined;
+			font-size: variables.$text-7xl;
+		}
+	}
+
+	&-sm {
+		@include title;
+		font-size: variables.$text-5xl;
+
+		&--outlined {
+			@include title--outlined;
+			font-size: variables.$text-5xl;
+		}
+	}
+
+	&-xs {
+		@include title;
+		font-size: variables.$text-3xl;
+
+		&--outlined {
+			@include title--outlined;
+			font-size: variables.$text-3xl;
+		}
+	}
+}
+
+.surtitle {
+	@include title;
+	font-style: italic;
+	font-weight: 600;
+	font-size: variables.$text-2xl;
+}
+
+@mixin badge-title {
+	font-weight: 950;
+	line-height: variables.$line-height-none;
+	font-family: variables.$font-primary;
+	text-transform: uppercase;
+}
+
+.badge-title {
+	@include badge-title;
+	font-size: variables.$text-2xl;
+
+	&--sm {
+		@include badge-title;
+		font-size: variables.$text-lg;
+	}
+
+	&--lg {
+		@include badge-title;
+		font-size: variables.$text-7xl;
+	}
+}
+
+@mixin body-text {
+	font-family: variables.$font-secondary;
+	color: variables.$color-text;
+	line-height: variables.$line-height-tight;
+}
+
+.product-text__category {
+	@include body-text;
+	text-transform: uppercase;
+	font-size: variables.$text-md;
+}
+
+.product-text__title {
+	@include body-text;
+	font-size: variables.$text-md;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	&--lg {
+		@include body-text;
+		font-size: variables.$text-2xl;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+
+.product-text__description {
+	@include body-text;
+	font-size: variables.$text-xl;
+	text-transform: uppercase;
+	text-align: center;
+
+	&--sm {
+		@include body-text;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: variables.$text-sm;
+	}
+}
+
+.product-text__old-price {
+	@include body-text;
+	font-size: variables.$text-lg;
+	text-decoration-line: line-through;
+
+	&--sm {
+		@include body-text;
+		font-size: variables.$text-xs;
+		text-decoration-line: line-through;
+	}
+
+	&--lg {
+		@include body-text;
+		font-size: variables.$text-5xl;
+		font-weight: 600;
+		text-decoration-line: line-through;
+	}
+}
+
+.product-text__discount-price {
+	@include body-text;
+	color: variables.$color-sale;
+	font-weight: bold;
+	font-size: variables.$text-xl;
+
+	&--sm {
+		@include body-text;
+		color: variables.$color-sale;
+		font-size: variables.$text-md;
+		font-weight: bold;
+	}
+
+	&--lg {
+		@include body-text;
+		color: variables.$color-sale;
+		font-size: variables.$text-4xl;
+		font-weight: bold;
+	}
+
+	&--xl {
+		@include body-text;
+		color: variables.$color-sale;
+		font-size: variables.$text-6xl;
+		font-weight: 800;
+	}
+}
+
+.product-text__label {
+	@include body-text;
+	font-size: variables.$text-xs;
+	font-weight: 600;
+}
+
+@mixin btn-text {
+	font-size: variables.$text-sm;
+	font-family: variables.$font-secondary;
+	font-weight: 600;
+}
+
+.navbar__text {
+	@include body-text;
+	font-size: variables.$text-md;
+}
